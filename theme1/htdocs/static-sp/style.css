@@ -129,6 +129,8 @@ img {
 .l-contents {
   /*会社概要 (company.html)
   ///////////////////////////////*/
+  /*個別記事 (single.html)
+  ///////////////////////////////*/
 }
 .l-contents .l-top-post-number {
   padding: 30px 0 0;
@@ -241,12 +243,99 @@ img {
 .l-contents .l-company h2 {
   padding: 0 0 40px;
 }
-.l-contents .l-company p {
+.l-contents .l-company dt {
+  background: url(assets/img/page/company/company_dt_bg.png) no-repeat;
+  height: 50px;
+  width: 580px;
+  padding: 20px 30px 30px;
+  font-size: 40px;
+  font-weight: bold;
+  line-height: 67px;
+}
+.l-contents .l-company dd {
   padding: 32px 30px;
   line-height: 35px;
+  color: #333333;
 }
-.l-contents .l-company p.mail-text {
-  padding: 56px 30px 100px 30px;
+.l-contents .l-company dd span {
+  display: block;
+}
+.l-contents .l-company dd span.email {
+  padding: 0 0 90px;
+}
+.l-contents .l-company dd span.text {
+  padding: 0 0 70px;
+}
+.l-contents .l-single {
+  background: #fff;
+}
+.l-contents .l-single h2 {
+  padding: 0 0 40px;
+}
+.l-contents .l-single h3 {
+  padding: 0;
+}
+.l-contents .l-single h4 {
+  padding: 30px;
+  font-size: 40px;
+  color: #333333;
+  line-height: 67px;
+  font-weight: bold;
+}
+.l-contents .l-single h4 span {
+  color: #054e84;
+  padding: 0 8px 0 0;
+  font-size: 47px;
+  position: relative;
+  top: 5px;
+}
+.l-contents .l-single dt {
+  background: url(assets/img/page/single/single_dt_bg.png) no-repeat;
+  height: 50px;
+  width: 580px;
+  padding: 20px 30px 30px;
+  font-size: 40px;
+  font-weight: bold;
+  line-height: 67px;
+}
+.l-contents .l-single dd {
+  padding: 32px 30px;
+  line-height: 35px;
+  font-size: 24px;
+  letter-spacing: -0.8px;
+  color: #333333;
+}
+.l-contents .l-single dd span {
+  display: block;
+}
+.l-contents .l-single dd span.email {
+  padding: 0 0 90px;
+}
+.l-contents .l-single dd span.text {
+  padding: 0 0 70px;
+}
+.l-contents .l-single .single-btn-consultant {
+  text-align: center;
+  padding: 100px 0;
+}
+.l-contents .l-single .single-map {
+  text-align: center;
+  padding: 0 0 100px;
+}
+.l-contents .l-single ul.related-news {
+  padding: 30px 30px 0;
+  border-bottom: 4px solid #8acbfb;
+}
+.l-contents .l-single ul.related-news li {
+  padding: 0 0 45px;
+}
+.l-contents .l-single ul.related-news li a {
+  color: #054e84;
+  font-size: 24px;
+  line-height: 35px;
+}
+.l-contents .l-single ul.related-news li:last-child {
+  padding: 0 0 26px;
 }
 
 /*==============================
