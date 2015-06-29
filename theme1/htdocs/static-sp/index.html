@@ -30,7 +30,7 @@
                 <div class="post-number-title">
                     <img src="assets/img/top/post_number_headline.png" width="640" height="100" alt="随時更新！本日のお仕事情報">
                 </div>
-                <p>38,400 件</p>
+                <p>38,400<span>件</span></p>
                 <div class="new-post">
                     <a href="#">▸新着求人はコチラ</a>
                 </div>
@@ -197,7 +197,7 @@
                     <img src="assets/img/top/top_rank_03_pic.png" width="580" height="310" alt="画像">
                 </div>
                 <p>「とらばーゆ」「タウンワーク」「リクナビ」等で年間100万人以上の転職を支援している転職業界NO1のリクルートが運営しているので、とても信頼感があります。 リクルートのネットワークで収集した高給与、好条件の病院常勤求人が豊富で、特に首都圏、関西、東海、九州の求人が多く、この地域での転職を考えている場合にはオススメです。 また、上京したい方へのサポートが充実している点も特徴のひとつです。「初めての転職」という方に適しているサービスかもしれません。</p>
-                <div class="rank-btn-detail">
+                <div class="ranking-btn-detail">
                     <a href="#"><img src="assets/img/top/top_btn_detail.png" width="580" height="90" alt="詳細を見る"></a>
                 </div>
             </div><!-- /.l-ranking -->
@@ -221,5 +221,19 @@
             </div>
         </footer> <!--/.l-footer-->
     </div> <!--/.wrap-->
+    <script type="text/javascript">
+        $('#list01').show();
+        $('li').click(function(){
+           var target = $(this).attr('rel');
+           $("#"+target).toggle();
+              if(target!='list01'){$('#list01').hide();}
+              if(target!='list02'){$('#list02').hide();}
+              if(target!='list03'){$('#list03').hide();}
+              if(target!='list04'){$('#list04').hide();}
+              if(target!='list05'){$('#list05').hide();}
+              if(target!='list06'){$('#list06').hide();}
+              if(target!='list07'){$('#list07').hide();}
+        });
+    </script>
 </body>
 </html>

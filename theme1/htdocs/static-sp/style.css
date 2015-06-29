@@ -132,11 +132,11 @@ img {
 }
 .l-contents .l-top-post-number {
   padding: 30px 0 0;
+  background: #fff;
 }
 .l-contents .l-top-post-number .post-number-title {
   text-align: center;
   padding: 0 0 35px;
-  background: #fff;
 }
 .l-contents .l-top-post-number p {
   color: #333333;
@@ -144,6 +144,11 @@ img {
   font-size: 80px;
   background: #fff;
   padding: 0 0 38px;
+  font-weight: bold;
+}
+.l-contents .l-top-post-number p span {
+  font-size: 50px;
+  padding: 0 0 0 20px;
 }
 .l-contents .l-top-post-number .new-post {
   background: #f5f5f5;
@@ -196,6 +201,12 @@ img {
   display: none;
 }
 .l-contents .l-top-search .search-by-employment {
+  padding: 0 0 30px;
+}
+.l-contents .l-top-search .search-by-qualification {
+  padding: 0 0 30px;
+}
+.l-contents .l-top-search .search-by-holiday {
   padding: 0 0 30px;
 }
 .l-contents .l-top-ranking {
