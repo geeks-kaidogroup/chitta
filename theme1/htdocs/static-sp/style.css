@@ -1,3 +1,5 @@
+@charset "UTF-8";
+/* Reset CSS */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -54,8 +56,179 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   display: block;
 }
 
-.btn-default, .btn-alert, .btn-success, .btn-system {
-  -moz-border-radius: 4px;
-  -webkit-border-radius: 4px;
-  border-radius: 4px;
+/* General */
+.float-list, .cf {
+  *zoom: 1;
+}
+.float-list:after, .cf:after {
+  content: "";
+  display: block;
+  clear: both;
+  height: 0;
+}
+
+.float-list li {
+  float: left;
+}
+
+/* Base */
+body {
+  font-size: 24px;
+  font-family: 'Lucida Grande', 'Hiragino Kaku Gothic ProN', 'ヒラギノ角ゴ ProN W3', 'Meiryo', 'メイリオ', 'sans-serif';
+}
+
+img {
+  vertical-align: middle;
+}
+
+/* Layout */
+/*==============================
+共通要素
+==============================*/
+.wrap {
+  width: 640px;
+  margin: 0 auto;
+  background: #f5f5f5;
+}
+
+/*==============================
+ヘッダー
+==============================*/
+.l-header {
+  border-top: 30px solid #8acbfb;
+  background: #fff;
+}
+.l-header h1 {
+  padding: 30px 30px 25px;
+  color: #333333;
+  line-height: 34px;
+  font-size: 24px;
+}
+.l-header .header-logo {
+  text-align: center;
+  padding: 0 0 30px;
+}
+
+/*==============================
+グローバルナビ
+==============================*/
+.l-navi {
+  text-align: center;
+}
+
+/*==============================
+メインビジュアル
+==============================*/
+.l-mv {
+  text-align: center;
+}
+
+/*==============================
+コンテンツ
+==============================*/
+.l-contents .l-top-post-number {
+  padding: 30px 0 0;
+}
+.l-contents .l-top-post-number .post-number-title {
+  text-align: center;
+  padding: 0 0 35px;
+  background: #fff;
+}
+.l-contents .l-top-post-number p {
+  color: #333333;
+  text-align: center;
+  font-size: 80px;
+  background: #fff;
+  padding: 0 0 38px;
+}
+.l-contents .l-top-post-number .new-post {
+  background: #f5f5f5;
+  text-align: center;
+  padding: 30px 0;
+}
+.l-contents .l-top-post-number .new-post a {
+  color: #1d9af8;
+  font-size: 40px;
+}
+.l-contents .l-top-search .search-head {
+  background: url(assets/img/top/search_bg.png) no-repeat;
+  height: 214px;
+}
+.l-contents .l-top-search .search-head .search-title {
+  text-align: center;
+  padding: 19px 0 30px;
+}
+.l-contents .l-top-search .search-head .search-box {
+  position: relative;
+  height: 80px;
+  width: 580px;
+  margin: 0 auto;
+}
+.l-contents .l-top-search .search-head .search-box input[type=text] {
+  background: url(assets/img/top/search_box_bg.png) no-repeat;
+  border: none;
+  outline: none;
+  width: 550px;
+  height: 80px;
+  padding: 0 0 0 30px;
+  font-size: 20px;
+}
+.l-contents .l-top-search .search-head .search-box button[type=search] {
+  position: absolute;
+  height: 60px;
+  width: 150px;
+  right: 10px;
+  top: 10px;
+  border: none;
+  outline: none;
+  font-size: 0;
+  cursor: pointer;
+  background: url(assets/img/top/search_box_btn.png) no-repeat;
+}
+.l-contents .l-top-search .search-by-area {
+  padding: 0 0 30px;
+}
+.l-contents .l-top-search .search-by-area .sub-area {
+  display: none;
+}
+.l-contents .l-top-search .search-by-employment {
+  padding: 0 0 30px;
+}
+.l-contents .l-top-ranking {
+  padding: 0 0 5px;
+  background: #fff;
+}
+.l-contents .l-top-ranking .ranking-headline {
+  padding: 30px 0 25px;
+  text-align: center;
+}
+.l-contents .l-top-ranking p {
+  line-height: 50px;
+  font-size: 24px;
+  padding: 0 40px;
+  color: #333;
+}
+.l-contents .l-top-ranking .ranking-pic {
+  text-align: center;
+  padding: 30px 0;
+}
+.l-contents .l-top-ranking .ranking-btn-detail {
+  text-align: center;
+  padding: 55px 0;
+}
+.l-contents .l-top-pagetop {
+  text-align: center;
+  padding: 60px 0;
+}
+
+/*==============================
+フッター
+==============================*/
+.l-footer .l-copyright {
+  background: #8acbfb;
+  height: 33px;
+  color: #333333;
+  font-size: 20px;
+  text-align: center;
+  padding: 17px 0 0 0;
 }
