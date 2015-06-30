@@ -10,6 +10,11 @@
 /*==============================
 共通要素
 ==============================*/
+.wrap {
+	@include wrap(640px);
+    background: #f5f5f5;
+}
+
 
 // ============================
 // l-header
@@ -18,6 +23,18 @@
 ヘッダー
 ==============================*/
 .l-header {
+	border-top: 30px solid #52a561;
+    background: #fff;
+    h1{
+        padding: 25px 30px 25px;
+        color: #333333;
+        line-height: 34px;
+        font-size: 24px;
+    }
+    .header-logo{
+        text-align: center;
+        padding: 0 0 30px;
+    }
 }
 
 // ============================
@@ -27,6 +44,17 @@
 グローバルナビ
 ==============================*/
 .l-navi {
+    text-align: center;
+}
+
+// ============================
+// l-mv
+// ============================
+/*==============================
+メインビジュアル
+==============================*/
+.l-mv {
+    text-align: center;
 }
 
 // ============================
@@ -36,7 +64,368 @@
 コンテンツ
 ==============================*/
 .l-contents {
+    .l-top-post-number{
+        padding: 30px 0 0;
+        background: #fffbef url() repeat-x left top;
+        .post-number-title{
+            text-align: center;
+        }
+        p{
+            color: #333333;
+            text-align: center;
+            font-size: 80px;
+            background: #f5f5f5;
+            padding: 35px 0 38px;
+            font-weight: bold;
+            span{
+                font-size: 50px;
+                padding: 0 0 0 20px;
+            }
+        }
+        .new-post{
+            text-align: center;
+            padding: 30px 0;
+            a{
+                color: #1d9af8;
+                font-size: 40px;
+            }
+        }
+    }
+    .l-top-search{
+        .search-head{
+            background: url(assets/img/top/search_bg.png) no-repeat;
+            height: 214px;
+            .search-title{
+                text-align: center;
+                padding: 19px 0 30px;
+            }
+            .search-box{
+                position: relative;
+                height: 80px;
+                width: 580px;
+                margin: 0 auto;
+                input[type=text]{
+                    background: url(assets/img/top/search_box_bg.png) no-repeat;
+                    border: none;
+                    outline: none;
+                    width: 380px;
+                    height: 80px;
+                    padding: 0 170px 0 30px;
+                    font-size: 20px;
+                }
+                button[type=search]{
+                    position: absolute;
+                    height: 60px;
+                    width: 150px;
+                    right: 10px;
+                    top: 10px;
+                    border: none;
+                    outline: none;
+                    font-size: 0;
+                    cursor: pointer;
+                    background: url(assets/img/top/search_box_btn.png) no-repeat;
+                }
+            }
+        }
+        .search-by-area{
+            padding: 0 0 30px;
+            .headline{
+                padding: 30px 0 0;
+            }
+            .sub-area {
+                display: none;
+            }
+        }
+        .search-by-employment{
+            padding: 0 0 30px;
+        }
+        .search-by-qualification{
+            padding: 0 0 30px;
+        }
+        .search-by-holiday{
+            padding: 0 0 30px;
+        }
+    }
+    .l-top-ranking{
+        padding: 0 0 5px;
+        background: #fff;
+        .ranking-headline{
+            padding: 30px 0 25px;
+            text-align: center;
+        }
+        p{
+            line-height: 50px;
+            font-size: 24px;
+            padding: 0 40px;
+            color: #333;
+        }
+        .ranking-pic{
+            text-align: center;
+            padding: 30px 0;
+        }
+        .ranking-btn-detail{
+            text-align: center;
+            padding: 55px 0;
+        }
+    }
+    .l-pagetop{
+        text-align: center;
+        padding: 60px 0;
+        background: #fff;
+    }
+    .l-top-pagetop{
+        text-align: center;
+        padding: 60px 0;
+    }
+
+
+    /*会社概要 (company.html)
+    ///////////////////////////////*/
+    .l-company{
+        background: #fff;
+        h2{
+            padding: 0 0 40px;
+        }
+        dt{
+            background: url(assets/img/page/company/company_dt_bg.png) no-repeat;
+            height: 50px;
+            width: 580px;
+            padding: 20px 30px 30px;
+            font-size: 40px;
+            font-weight: bold;
+            line-height: 67px;
+        }
+        dd{
+            padding: 32px 30px;
+            line-height: 35px;
+            color: #333333;
+            span{
+                display: block;
+                &.email{
+                    padding: 0 0 90px;
+                }
+               &.text{
+                    padding: 0 0 70px;
+                }
+            }
+        }
+    }
+
+    /*個別記事 (single.html)
+    ///////////////////////////////*/
+    .l-single{
+        background: #fff;
+        h2{
+            padding: 0 0 40px;
+        }
+        h3{
+            border-top: 4px solid #52a561;
+            padding: 20px 0 0;
+        }
+        h4{
+            padding: 30px;
+            font-size: 40px;
+            color: #333333;
+            line-height: 67px;
+            font-weight: bold;
+            span{
+                color: #52a561;
+                padding: 0 8px 0 0;
+                font-size: 47px;
+                position: relative;
+                top: 5px;
+            }
+        }
+        dt{
+            background: url(assets/img/page/single/single_dt_bg.png) no-repeat;
+            height: 50px;
+            width: 580px;
+            padding: 20px 30px 30px;
+            font-size: 40px;
+            font-weight: bold;
+            line-height: 67px;
+        }
+        dd{
+            padding: 32px 30px;
+            line-height: 35px;
+            font-size: 24px;
+            letter-spacing: -0.8px;
+            color: #333333;
+        }
+        .single-btn-consultant{
+            text-align: center;
+            padding: 100px 0;
+        }
+        .single-map{
+            text-align: center;
+            padding: 0 0 100px;
+        }
+        ul.related-news{
+            padding: 30px 30px 0;
+            border-bottom: 4px solid #52a561;
+            li{
+                padding: 0 0 45px;
+                a{
+                    color: #52a561;
+                    font-size: 24px;
+                    line-height: 35px;
+                }
+                &:last-child{
+                    padding: 0 0 26px;
+                }
+            }
+        }
+    }
+    /*検索一覧 (archive.html)
+    ///////////////////////////////*/
+    .l-archive{
+        h2{
+            padding: 0 0 30px;
+        }
+        h3{
+            padding: 20px 0;
+        }
+        .archive-search{
+            background: #fff url(assets/img/top/search_bg.png) no-repeat;
+            height: 214px;
+            padding: 0 0 30px;
+            .search-title{
+                text-align: center;
+                padding: 19px 0 30px;
+            }
+            .search-box{
+                position: relative;
+                height: 80px;
+                width: 580px;
+                margin: 0 auto;
+                input[type=text]{
+                    background: url(assets/img/top/search_box_bg.png) no-repeat;
+                    border: none;
+                    outline: none;
+                    width: 380px;
+                    height: 80px;
+                    padding: 0 170px 0 30px;
+                    font-size: 20px;
+                }
+                button[type=search]{
+                    position: absolute;
+                    height: 60px;
+                    width: 150px;
+                    right: 10px;
+                    top: 10px;
+                    border: none;
+                    outline: none;
+                    font-size: 0;
+                    cursor: pointer;
+                    background: url(assets/img/top/search_box_btn.png) no-repeat;
+                }
+            }
+        }
+        .search-archive{
+            padding: 25px 0 0;
+            background: #fff;
+            p{
+                color: #333;
+                font-size: 24px;
+                padding: 0 30px 30px;
+                &.result{
+                    padding: 30px;
+                }
+                span{
+                    color: #ff5e00;
+                    font-size: 40px;
+                }
+            }
+        }
+       .l-archive-list{
+            border-top: 4px solid #52a561;
+            border-bottom: 4px solid #52a561;
+           .archive-single{
+                background: #fff url(assets/img/page/archive/archive_hospital_bg.png) repeat-x  left bottom;
+                padding: 0 0 68px;
+                &:last-child{
+                    background: #fff;
+                    padding: 0;
+                }
+                dt{
+                    background: url(assets/img/page/single/single_dt_bg.png) no-repeat;
+                    height: 50px;
+                    width: 580px;
+                    padding: 20px 30px 30px;
+                    font-size: 40px;
+                    font-weight: bold;
+                    line-height: 67px;
+                }
+                dd{
+                    padding: 32px 30px;
+                    line-height: 35px;
+                    font-size: 24px;
+                    letter-spacing: -0.8px;
+                    color: #333333;
+                    background: #fff;
+                }
+                .archive-btn-detail{
+                    text-align: center;
+                    border-top: 4px solid #cccccc;
+                    padding: 60px 0;
+                }
+            }
+        }
+        .pagination{
+            background: #f5f5f5 url(assets/img/page/archive/archive_pagination_bg.png) repeat-x left top;
+            font-size: 55px;
+            text-align: center;
+            padding: 59px 0 60px;
+            li{
+                display: inline;
+                &.active{
+                    background: url(assets/img/page/archive/archive_pagination_li_bg.png) no-repeat left top;
+                    padding: 15px 33px;
+
+                }
+                a{
+                    text-decoration: none;
+                    background: url(assets/img/page/archive/archive_pagination_a_bg.png) no-repeat center center;
+                    padding: 15px 33px;
+                    color: #333333;
+
+                }
+            }
+        }
+        .archive-filter{
+            background: #fff;
+            th,td{
+                display: block;
+                border-bottom: 4px solid #ccc;
+            }
+            td{
+                padding: 30px;
+            }
+            input[type=checkbox]:not(old){
+                margin  : 0;
+                padding : 0;
+                opacity : 0;
+            }
+
+            input[type=checkbox]:not(old) + label{
+                display      : inline-block;
+                padding : 5px 0 0 100px;
+                background   : url(assets/img/page/archive/archive_filter_checkbox_check.png) no-repeat 0 0;
+                height: 50px;
+            }
+
+            input[type=checkbox]:not(old):checked + label{
+                background-position : 0 -69px;
+            }
+            .archive-filter-btn{
+                text-align: center;
+                background: #fff;
+                padding: 60px 0 0;
+            }
+        }
+    }
 }
+
 
 // ============================
 // l-footer
@@ -45,4 +434,14 @@
 フッター
 ==============================*/
 .l-footer {
+    .l-copyright{
+        background: #52a561;
+        height: 33px;
+        color: #FFF;
+        font-size: 20px;
+        text-align: center;
+        padding:  17px 0 0 0;
+    }
 }
+
+
