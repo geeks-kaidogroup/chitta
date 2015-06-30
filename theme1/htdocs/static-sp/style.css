@@ -275,7 +275,8 @@ img {
   padding: 0 0 40px;
 }
 .l-contents .l-single h3 {
-  padding: 0;
+  border-top: 4px solid #8acbfb;
+  padding: 10px 0 0;
 }
 .l-contents .l-single h4 {
   padding: 30px;
