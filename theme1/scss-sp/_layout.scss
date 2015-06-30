@@ -110,9 +110,9 @@
                     background: url(assets/img/top/search_box_bg.png) no-repeat;
                     border: none;
                     outline: none;
-                    width: 550px;
+                    width: 380px;
                     height: 80px;
-                    padding: 0 0 0 30px;
+                    padding: 0 170px 0 30px;
                     font-size: 20px;
                 }
                 button[type=search]{
@@ -244,15 +244,6 @@
             font-size: 24px;
             letter-spacing: -0.8px;
             color: #333333;
-            span{
-                display: block;
-                &.email{
-                    padding: 0 0 90px;
-                }
-               &.text{
-                    padding: 0 0 70px;
-                }
-            }
         }
         .single-btn-consultant{
             text-align: center;
@@ -275,6 +266,151 @@
                 &:last-child{
                     padding: 0 0 26px;
                 }
+            }
+        }
+    }
+    /*検索一覧 (archive.html)
+    ///////////////////////////////*/
+    .l-archive{
+        h2{
+            padding: 0 0 30px;
+        }
+        .archive-search{
+            background: #fff url(assets/img/top/search_bg.png) no-repeat;
+            height: 214px;
+            padding: 0 0 30px;
+            .search-title{
+                text-align: center;
+                padding: 19px 0 30px;
+            }
+            .search-box{
+                position: relative;
+                height: 80px;
+                width: 580px;
+                margin: 0 auto;
+                input[type=text]{
+                    background: url(assets/img/top/search_box_bg.png) no-repeat;
+                    border: none;
+                    outline: none;
+                    width: 380px;
+                    height: 80px;
+                    padding: 0 170px 0 30px;
+                    font-size: 20px;
+                }
+                button[type=search]{
+                    position: absolute;
+                    height: 60px;
+                    width: 150px;
+                    right: 10px;
+                    top: 10px;
+                    border: none;
+                    outline: none;
+                    font-size: 0;
+                    cursor: pointer;
+                    background: url(assets/img/top/search_box_btn.png) no-repeat;
+                }
+            }
+        }
+        .search-archive{
+            padding: 25px 0 0;
+            background: #fff;
+            p{
+                color: #333;
+                font-size: 24px;
+                padding: 0 30px 30px;
+                &.result{
+                    padding: 30px;
+                }
+                span{
+                    color: #ff5e00;
+                    font-size: 40px;
+                }
+            }
+        }
+       .l-archive-list{
+            border-top: 4px solid #8acbfb;
+            border-bottom: 4px solid #8acbfb;
+           .archive-single{
+                background: #fff url(assets/img/page/archive/archive_hospital_bg.png) repeat-x  left bottom;
+                padding: 0 0 68px;
+                &:last-child{
+                    background: #fff;
+                    padding: 0;
+                }
+                dt{
+                    background: url(assets/img/page/single/single_dt_bg.png) no-repeat;
+                    height: 50px;
+                    width: 580px;
+                    padding: 20px 30px 30px;
+                    font-size: 40px;
+                    font-weight: bold;
+                    line-height: 67px;
+                }
+                dd{
+                    padding: 32px 30px;
+                    line-height: 35px;
+                    font-size: 24px;
+                    letter-spacing: -0.8px;
+                    color: #333333;
+                    background: #fff;
+                }
+                .archive-btn-detail{
+                    text-align: center;
+                    border-top: 4px solid #cccccc;
+                    padding: 60px 0;
+                }
+            }
+        }
+        .pagination{
+            background: #f5f5f5 url(assets/img/page/archive/archive_pagination_bg.png) repeat-x left top;
+            font-size: 55px;
+            text-align: center;
+            padding: 59px 0 60px;
+            li{
+                display: inline;
+                &.active{
+                    background: url(assets/img/page/archive/archive_pagination_li_bg.png) no-repeat left top;
+                    padding: 15px 33px;
+
+                }
+                a{
+                    text-decoration: none;
+                    background: url(assets/img/page/archive/archive_pagination_a_bg.png) no-repeat center center;
+                    padding: 15px 33px;
+                    color: #fff;
+
+                }
+            }
+        }
+        .archive-filter{
+            background: #fff;
+            th,td{
+                display: block;
+                border-bottom: 4px solid #ccc;
+            }
+            td{
+                padding: 30px;
+            }
+            input[type=checkbox]:not(old){
+                margin  : 0;
+                padding : 0;
+                opacity : 0;
+            }
+
+            input[type=checkbox]:not(old) + label{
+                display      : inline-block;
+                padding : 5px 0 0 100px;
+                background   : url(assets/img/page/archive/archive_filter_checkbox_check.png) no-repeat 0 0;
+                height: 50px;
+            }
+
+            input[type=checkbox]:not(old):checked + label{
+                background-position : 0 -69px;
+            }
+            .archive-filter-btn{
+                text-align: center;
+                background: #f5f5f5;
+                padding: 60px 0 0;
             }
         }
     }
