@@ -99,7 +99,7 @@ img {
   background: #fff;
 }
 .l-header h1 {
-  padding: 30px 30px 25px;
+  padding: 25px 30px 25px;
   color: #333333;
   line-height: 34px;
   font-size: 24px;
@@ -200,6 +200,9 @@ img {
 }
 .l-contents .l-top-search .search-by-area {
   padding: 0 0 30px;
+}
+.l-contents .l-top-search .search-by-area .headline {
+  padding: 30px 0 0;
 }
 .l-contents .l-top-search .search-by-area .sub-area {
   display: none;

@@ -1,16 +1,23 @@
-$(function() {
 
-	/**
-	 * ページ内スクロール
-	 * #の付いたリンクを自動的にスクロール化する
-	 */
-	$('a[href^=#]').click(function(){
-		var speed = 500;
-		var href= $(this).attr("href");
-		var target = $(href == "#" || href == "" ? 'html' : href);
-		var position = target.offset().top;
-		$("html, body").not(':animated').animate({scrollTop:position}, speed, "swing");
-		return false;
+	$(document).ready(function() {
+		$("#menu").mmenu({
+			offCanvas: {
+				position  : "right", //left(デフォルト)・right・top・bottom
+				zposition : "next", //back(デフォルト)・front・next
+			}
+		});
 	});
 
-});
+	// btntelフェードイン・アウト
+	$(function(){
+		$(window).bind("scroll", function() {
+		// トップから150px以上スクロールしたら
+		if ($(this).scrollTop() > 150) {
+		 // btntelをフェードインする
+			$(".btntel").fadeIn();
+		} else { // それ以外は
+		 // btntelをフェードアウトする
+			$(".btntel").fadeOut();
+		}
+	});
+	});

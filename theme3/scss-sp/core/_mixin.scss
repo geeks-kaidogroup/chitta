@@ -6,7 +6,7 @@
 // ====================================
 // mixin
 // ====================================
-@mixin wrap($value:1000px) {
+@mixin wrap($value:600px) {
 	width:$value;
 	margin:0 auto;
 }
