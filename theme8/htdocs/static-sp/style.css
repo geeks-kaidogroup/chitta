@@ -205,6 +205,9 @@ img {
 .l-contents .l-top-search .search-by-area .sub-area {
   display: none;
 }
+.l-contents .l-top-search .search-by-job {
+  padding: 0 0 30px;
+}
 .l-contents .l-top-search .search-by-employment {
   padding: 0 0 30px;
 }

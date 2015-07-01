@@ -274,7 +274,8 @@ img {
   padding: 0 0 40px;
 }
 .l-single h3 {
-  padding: 0;
+  border-top: 4px solid #064a95;
+  padding: 20px 0 0;
 }
 .l-single h4 {
   padding: 30px;
@@ -428,14 +429,14 @@ img {
   background: #fff url(assets/img/page/archive/archive_pagination_bg.png) repeat-x left top;
   font-size: 55px;
   text-align: center;
-  padding: 59px 0 60px;
+  padding: 59px 0 70px;
 }
 .l-archive .pagination li {
   display: inline;
 }
 .l-archive .pagination li.active {
   background: url(assets/img/page/archive/archive_pagination_li_bg.png) no-repeat left top;
-  padding: 7px 33px;
+  padding: 15px 33px;
 }
 .l-archive .pagination li a {
   text-decoration: none;

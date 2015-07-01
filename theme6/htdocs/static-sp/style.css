@@ -199,6 +199,9 @@ img {
   cursor: pointer;
   background: url(assets/img/top/search_box_btn.png) no-repeat;
 }
+.l-contents .l-top-search .search-by-job {
+  padding: 0 0 30px;
+}
 .l-contents .l-top-search .search-by-area {
   padding: 0 0 30px;
 }

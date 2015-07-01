@@ -241,7 +241,7 @@ img {
   padding: 60px 0;
   background: #fff;
 }
-.l-contents l-top-pagetop {
+.l-contents .l-top-pagetop, .l-contents .l-pagetop-company, .l-contents .l-pagetop-single {
   text-align: center;
   padding: 60px 0;
   background: #fffcf0;

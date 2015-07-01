@@ -96,7 +96,7 @@ img {
 ==============================*/
 .l-header {
   border-top: 30px solid #fca5a5;
-  background: #fff url(assets/img/layout/header/header_bg.png) no-repeat left bottom;
+  background: #fff;
 }
 .l-header h1 {
   padding: 25px 30px 25px;
@@ -121,6 +121,7 @@ img {
 ==============================*/
 .l-mv {
   text-align: center;
+  background: #fff;
 }
 
 /*==============================
