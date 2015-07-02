@@ -121,18 +121,82 @@
         }
         .search-by-area{
             padding: 0 0 30px;
+            .headline{
+                padding: 30px 0 0;
+            }
             .sub-area {
                 display: none;
             }
         }
+        ul{
+            li{
+                font-size: 40px;
+                font-weight: bold;
+                .area{
+                    width: 580px;
+                    height: 40px;
+                    padding: 30px;
+                    background: url(assets/img/top/top_search_area_bg_1.png) no-repeat 0 0;
+                }
+                .area-last{
+                    width: 580px;
+                    height: 46px;
+                    padding: 30px;
+                    background: url(assets/img/top/top_search_area_bg.png) no-repeat 0 0;
+                }
+                a{
+                    color: #333;
+                    text-decoration: none;
+                }
+                ul{
+                    li{
+                        border-bottom: 3px solid #ccc;
+                        width: 610px;
+                        height: 40px;
+                        padding: 30px 0 30px 30px;
+                        background: #fff url(assets/img/top/top_search_area_li_bg.png) no-repeat 580px 40px;
+                        &:first-child{
+                            border-bottom: 3px solid #ccc;
+                            border-top: 3px solid #ccc;
+                            width: 610px;
+                            height: 40px;
+                            padding: 30px 0 30px 30px;
+                            background: #fff url(assets/img/top/top_search_area_li_bg.png) no-repeat 580px 40px;
+                        }
+                        &:last-child{
+                            border-bottom: none;
+                            border-top: none;
+                            width: 610px;
+                            height: 40px;
+                            padding: 30px 0 30px 30px;
+                            background: #fff url(assets/img/top/top_search_area_li_bg.png) no-repeat 580px 40px;
+                        }
+                        &.area07-top{
+                            border-top: none;
+                        }
+                        &.area07-foot{
+                            border-bottom: 3px solid #ccc;
+                        }
+                    }
+                }
+            }
+        }
         .search-by-job{
             padding: 0 0 30px;
-        }
-        .search-by-qualification{
-            padding: 0 0 30px;
-        }
-        .search-by-holiday{
-            padding: 0 0 30px;
+            li{
+                border-bottom: 3px solid #ccc;
+                padding: 33px 30px;
+                font-size: 35px;
+                font-weight: bold;
+                letter-spacing: -0.6px;
+                background: url(assets/img/top/top_search_by_bg.png) no-repeat 0 0;
+                &:first-child{
+                    border-top: 3px solid #ccc;
+                }
+                span{
+                    font-size: 25px;
+                }
+            }
         }
     }
     .l-top-ranking{
@@ -176,32 +240,7 @@
     ///////////////////////////////*/
     .l-company{
         background: #fff;
-        h2{
-            padding: 0 0 40px;
-        }
-        dt{
-            background: url(assets/img/page/company/company_dt_bg.png) no-repeat;
-            height: 53px;
-            width: 580px;
-            padding: 17px 30px 30px;
-            font-size: 40px;
-            font-weight: bold;
-            line-height: 67px;
-        }
-        dd{
-            padding: 32px 30px;
-            line-height: 35px;
-            color: #333333;
-            span{
-                display: block;
-                &.email{
-                    padding: 0 0 90px;
-                }
-               &.text{
-                    padding: 0 0 70px;
-                }
-            }
-        }
+        text-align: center;
     }
 }
 
@@ -210,10 +249,19 @@
     .l-single{
         background: #fff;
         h2{
-            padding: 0 0 40px;
-        }h3 {
+            padding: 30px 0 40px 30px;
+            background: url(assets/img/page/single/single_h2_bg.png) no-repeat;
+            color: #fff;
+            margin: 0 0 40px;
+            font-weight: bold;
+            font-size: 40px;
+        }
+        h3{
             border-top: 4px solid #064a95;
-            padding: 20px 0 0;
+            padding: 30px 0 51px 110px;
+            background: url(assets/img/page/single/single_h3_bg.png) no-repeat 0 15px;
+            font-weight: bold;
+            font-size: 40px;
         }
         h4{
             padding: 30px;
@@ -236,7 +284,7 @@
             padding: 20px 30px 30px;
             font-size: 40px;
             font-weight: bold;
-            line-height: 67px;
+            line-height: 60px;
         }
         dd{
             padding: 32px 30px;
@@ -274,10 +322,18 @@
     ///////////////////////////////*/
     .l-archive{
         h2{
-            padding: 0 0 30px;
+            background: url("assets/img/page/single/single_h2_bg.png") no-repeat 0 0;
+            color: #fff;
+            font-size: 40px;
+            font-weight: bold;
+            margin: 0 0 35px;
+            padding: 30px 0 25px 30px;
         }
         h3{
-            padding: 30px 0;
+            padding: 30px 0 40px 120px;
+            background: url(assets/img/page/archive/archive_h3_bg.png) no-repeat 36px 23px;
+            font-weight: bold;
+            font-size: 40px;
         }
         .archive-search{
             background: #fff url(assets/img/top/search_bg.png) no-repeat;
@@ -322,6 +378,18 @@
                 color: #333;
                 font-size: 24px;
                 padding: 0 30px 30px;
+                &.headline{
+                    font-weight: bold;
+                    font-size: 40px;
+                    height: 80px;
+                    background: url(assets/img/page/archive/search_archive_bg.png) no-repeat 0 70px;
+                    span{
+                        color:#064a95;
+                        font-size: 40px;
+                        padding: 0 10px 0 0;
+                    }
+                }
+                &
                 &.result{
                     padding: 30px;
                 }
@@ -348,7 +416,7 @@
                     padding: 20px 30px 30px;
                     font-size: 40px;
                     font-weight: bold;
-                    line-height: 67px;
+                    line-height: 60px;
                 }
                 dd{
                     padding: 32px 30px;
@@ -388,6 +456,32 @@
         }
         .archive-filter{
             background: #fff;
+            p{
+                font-size: 40px;
+                padding: 30px 30px 30px 130px;
+                font-weight: bold;
+                &.headline{
+                    background: url(assets/img/page/archive/archive_filter_headline_bg.png) no-repeat 0 0;
+                }
+            }
+            li{
+                border-bottom: 3px solid #ccc;
+                padding: 33px 30px;
+                font-size: 35px;
+                font-weight: bold;
+                letter-spacing: -0.6px;
+                background: url(assets/img/top/top_search_by_bg.png) no-repeat 0 0;
+                &:first-child{
+                    border-top: 3px solid #ccc;
+                }
+                a{
+                    color: #333;
+                    text-decoration: none;
+                }
+                span{
+                    font-size: 25px;
+                }
+            }
             .archive-filter-btn{
                 text-align: center;
                 padding: 60px 0 0;
@@ -402,14 +496,31 @@
 フッター
 ==============================*/
 .l-footer {
+    background: #fff;
+    li{
+        border-bottom: 3px solid #ccc;
+        background: #fff url(assets/img/top/top_search_area_li_bg.png) no-repeat 580px 40px;
+        padding: 30px;
+        &:first-child{
+            border-top: 3px solid #ccc;
+        }
+        &.toppage{
+            border-top: none;
+        }
+        a{
+            text-decoration: none;
+            color: #333;
+            font-size: 40px;
+            font-weight: bold;
+        }
+    }
     .l-copyright{
         background: #3381cf;
         height: 33px;
-        color: #ffffff;
+        color: #333333;
         font-size: 20px;
         text-align: center;
         padding:  17px 0 0 0;
     }
 }
-
 

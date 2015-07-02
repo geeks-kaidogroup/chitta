@@ -138,14 +138,82 @@
                 display: none;
             }
         }
+        ul{
+            li{
+                font-size: 40px;
+                font-weight: bold;
+                .area{
+                    width: 580px;
+                    height: 40px;
+                    padding: 30px;
+                    background: url(assets/img/top/top_search_area_bg_1.png) no-repeat 0 0;
+                }
+                .area-last{
+                    width: 580px;
+                    height: 46px;
+                    padding: 30px;
+                    background: url(assets/img/top/top_search_area_bg.png) no-repeat 0 0;
+                }
+                a{
+                    color: #333;
+                    text-decoration: none;
+                }
+                ul{
+                    li{
+                        border-bottom: 3px solid #ccc;
+                        width: 610px;
+                        height: 40px;
+                        padding: 30px 0 30px 30px;
+                        background: #fff url(assets/img/top/top_search_area_li_bg.png) no-repeat 0 0;
+                        &:first-child{
+                            border-bottom: 3px solid #ccc;
+                            border-top: 3px solid #ccc;
+                            width: 610px;
+                            height: 40px;
+                            padding: 30px 0 30px 30px;
+                            background: #fff url(assets/img/top/top_search_area_li_bg.png) no-repeat 0 0;
+                        }
+                        &:last-child{
+                            border-bottom: none;
+                            border-top: none;
+                            width: 610px;
+                            height: 40px;
+                            padding: 30px 0 30px 30px;
+                            background: #fff url(assets/img/top/top_search_area_li_bg.png) no-repeat 0 0;
+                        }
+                        &.area07-top{
+                            border-top: none;
+                        }
+                        &.area07-foot{
+                            border-bottom: 3px solid #ccc;
+                        }
+                    }
+                }
+            }
+        }
         .search-by-employment{
             padding: 0 0 30px;
+            li{
+                border-bottom: 3px solid #ccc;
+                padding: 30px;
+                background: url(assets/img/top/top_search_by_bg.png) no-repeat 0 0;
+            }
         }
         .search-by-qualification{
             padding: 0 0 30px;
+            li{
+                border-bottom: 3px solid #ccc;
+                padding: 30px;
+                background: url(assets/img/top/top_search_by_bg.png) no-repeat 0 0;
+            }
         }
         .search-by-holiday{
             padding: 0 0 30px;
+            li{
+                border-bottom: 3px solid #ccc;
+                padding: 30px;
+                background: url(assets/img/top/top_search_by_bg.png) no-repeat 0 0;
+            }
         }
     }
     .l-top-ranking{
@@ -175,43 +243,21 @@
         padding: 60px 0;
         background: #fffbef;
     }
-    .l-top-pagetop, .l-pagetop-archive{
+    .l-top-pagetop{
+        text-align: center;
+        padding: 60px 0;
+        background: #fffbef;
+    }
+    .l-pagetop-archive{
         text-align: center;
         padding: 60px 0;
         background: #fff;
     }
 
-
     /*会社概要 (company.html)
     ///////////////////////////////*/
     .l-company{
-        background: #fff;
-        h2{
-            padding: 0 0 40px;
-        }
-        dt{
-            background: url(assets/img/page/company/company_dt_bg.png) no-repeat;
-            height: 50px;
-            width: 580px;
-            padding: 20px 30px 30px;
-            font-size: 40px;
-            font-weight: bold;
-            line-height: 67px;
-        }
-        dd{
-            padding: 32px 30px;
-            line-height: 35px;
-            color: #333333;
-            span{
-                display: block;
-                &.email{
-                    padding: 0 0 90px;
-                }
-               &.text{
-                    padding: 0 0 70px;
-                }
-            }
-        }
+        text-align: center;
     }
 
     /*個別記事 (single.html)
@@ -219,11 +265,19 @@
     .l-single{
         background: #fff;
         h2{
-            padding: 0 0 40px;
+            padding: 30px 0 40px 30px;
+            background: url(assets/img/page/single/single_h2_bg.png) no-repeat;
+            color: #fff;
+            margin: 0 0 40px;
+            font-weight: bold;
+            font-size: 40px;
         }
         h3{
             border-top: 4px solid #d6ead7;
-            padding: 20px 0 0;
+            padding: 30px 0 51px 130px;
+            background: url(assets/img/page/single/single_h3_bg.png) no-repeat 0 15px;
+            font-weight: bold;
+            font-size: 40px;
         }
         h4{
             padding: 30px;
@@ -246,7 +300,7 @@
             padding: 20px 30px 30px;
             font-size: 40px;
             font-weight: bold;
-            line-height: 67px;
+            line-height: 60px;
         }
         dd{
             padding: 32px 30px;
@@ -283,10 +337,18 @@
     ///////////////////////////////*/
     .l-archive{
         h2{
-            padding: 0 0 30px;
+            background: url("assets/img/page/single/single_h2_bg.png") no-repeat 0 0;
+            color: #fff;
+            font-size: 40px;
+            font-weight: bold;
+            margin: 0 0 35px;
+            padding: 30px 0 25px 30px;
         }
         h3{
-            padding: 20px 0;
+            padding: 30px 0 51px 90px;
+            background: url(assets/img/page/archive/archive_h3_bg.png) no-repeat 36px 23px;
+            font-weight: bold;
+            font-size: 40px;
         }
         .archive-search{
             background: #fffbef url(assets/img/top/search_bg.png) no-repeat;
@@ -331,6 +393,17 @@
                 color: #333;
                 font-size: 24px;
                 padding: 0 30px 30px;
+                &.headline{
+                    font-weight: bold;
+                    font-size: 40px;
+                    height: 60px;
+                    background: url(assets/img/page/archive/search_archive_bg.png) no-repeat 0 70px;
+                    span{
+                        color:#006634;
+                        font-size: 40px;
+                        padding: 0 10px 0 0;
+                    }
+                }
                 &.result{
                     padding: 30px;
                 }
@@ -357,7 +430,7 @@
                     padding: 20px 30px 30px;
                     font-size: 40px;
                     font-weight: bold;
-                    line-height: 67px;
+                    line-height: 60px;
                 }
                 dd{
                     padding: 32px 30px;
@@ -404,6 +477,22 @@
             td{
                 padding: 30px;
             }
+            th{
+                padding: 25px 30px 35px 130px;
+                font-size: 40px;
+                font-weight: bold;
+                width: 480px;
+                height: 40px;
+                &.head1{
+                    background: url(assets/img/page/archive/th_head_01.png) no-repeat;
+                }
+                &.head2{
+                    background: url(assets/img/page/archive/th_head_02.png) no-repeat;
+                }
+                &.head3{
+                    background: url(assets/img/page/archive/th_head_03.png) no-repeat;
+                }
+            }
             input[type=checkbox]:not(old){
                 margin  : 0;
                 padding : 0;
@@ -416,6 +505,8 @@
                 padding : 5px 0 0 100px;
                 background   : url(assets/img/page/archive/archive_filter_checkbox_check.png) no-repeat 0 0;
                 height: 50px;
+                font-size: 40px;
+                font-weight: bold;
             }
 
             input[type=checkbox]:not(old):checked + label{
@@ -438,14 +529,30 @@
 フッター
 ==============================*/
 .l-footer {
+    background: #fff;
+    li{
+        background: #fff url(assets/img/top/top_search_area_li_bg.png) no-repeat 580px 40px;
+        border-bottom: 3px solid #ccc;
+        padding: 30px;
+        &:first-child{
+            border-top: 3px solid #ccc;
+        }
+        &.toppage{
+            border-top: none;
+        }
+        a{
+            text-decoration: none;
+            color: #333;
+            font-size: 40px;
+            font-weight: bold;
+        }
+    }
     .l-copyright{
         background: #5aa572;
         height: 33px;
-        color: #FFF;
+        color: #333333;
         font-size: 20px;
         text-align: center;
         padding:  17px 0 0 0;
     }
 }
-
-

@@ -199,9 +199,6 @@ img {
   cursor: pointer;
   background: url(assets/img/top/search_box_btn.png) no-repeat;
 }
-.l-contents .l-top-search .search-by-job {
-  padding: 0 0 30px;
-}
 .l-contents .l-top-search .search-by-area {
   padding: 0 0 30px;
 }
@@ -211,8 +208,71 @@ img {
 .l-contents .l-top-search .search-by-area .sub-area {
   display: none;
 }
-.l-contents .l-top-search .search-by-employment {
+.l-contents .l-top-search ul li {
+  font-size: 40px;
+  font-weight: bold;
+}
+.l-contents .l-top-search ul li .area {
+  width: 580px;
+  height: 40px;
+  padding: 30px;
+  background: url(assets/img/top/top_search_area_bg_1.png) no-repeat 0 0;
+}
+.l-contents .l-top-search ul li .area-last {
+  width: 580px;
+  height: 46px;
+  padding: 30px;
+  background: url(assets/img/top/top_search_area_bg.png) no-repeat 0 0;
+}
+.l-contents .l-top-search ul li a {
+  color: #333;
+  text-decoration: none;
+}
+.l-contents .l-top-search ul li ul li {
+  border-bottom: 3px solid #ccc;
+  width: 610px;
+  height: 40px;
+  padding: 30px 0 30px 30px;
+  background: #fff url(assets/img/top/top_search_area_li_bg.png) no-repeat 580px 40px;
+}
+.l-contents .l-top-search ul li ul li:first-child {
+  border-bottom: 3px solid #ccc;
+  border-top: 3px solid #ccc;
+  width: 610px;
+  height: 40px;
+  padding: 30px 0 30px 30px;
+  background: #fff url(assets/img/top/top_search_area_li_bg.png) no-repeat 580px 40px;
+}
+.l-contents .l-top-search ul li ul li:last-child {
+  border-bottom: none;
+  border-top: none;
+  width: 610px;
+  height: 40px;
+  padding: 30px 0 30px 30px;
+  background: #fff url(assets/img/top/top_search_area_li_bg.png) no-repeat 580px 40px;
+}
+.l-contents .l-top-search ul li ul li.area07-top {
+  border-top: none;
+}
+.l-contents .l-top-search ul li ul li.area07-foot {
+  border-bottom: 3px solid #ccc;
+}
+.l-contents .l-top-search .search-by-job {
   padding: 0 0 30px;
+}
+.l-contents .l-top-search .search-by-job li {
+  border-bottom: 3px solid #ccc;
+  padding: 33px 30px;
+  font-size: 35px;
+  font-weight: bold;
+  letter-spacing: -0.6px;
+  background: url(assets/img/top/top_search_by_bg.png) no-repeat 0 0;
+}
+.l-contents .l-top-search .search-by-job li:first-child {
+  border-top: 3px solid #ccc;
+}
+.l-contents .l-top-search .search-by-job li span {
+  font-size: 25px;
 }
 .l-contents .l-top-ranking {
   padding: 0 0 5px;
@@ -242,42 +302,25 @@ img {
 }
 .l-contents .l-company {
   background: #fff;
-}
-.l-contents .l-company h2 {
-  padding: 0 0 40px;
-}
-.l-contents .l-company dt {
-  background: url(assets/img/page/company/company_dt_bg.png) no-repeat;
-  height: 50px;
-  width: 580px;
-  padding: 20px 30px 30px;
-  font-size: 40px;
-  font-weight: bold;
-  line-height: 67px;
-}
-.l-contents .l-company dd {
-  padding: 32px 30px;
-  line-height: 35px;
-  color: #333333;
-}
-.l-contents .l-company dd span {
-  display: block;
-}
-.l-contents .l-company dd span.email {
-  padding: 0 0 90px;
-}
-.l-contents .l-company dd span.text {
-  padding: 0 0 70px;
+  text-align: center;
 }
 .l-contents .l-single {
   background: #fff;
 }
 .l-contents .l-single h2 {
-  padding: 0 0 40px;
+  padding: 30px 0 40px 30px;
+  background: url(assets/img/page/single/single_h2_bg.png) no-repeat;
+  color: #fff;
+  margin: 0 0 40px;
+  font-weight: bold;
+  font-size: 40px;
 }
 .l-contents .l-single h3 {
-  border-top: 4px solid #ff9934;
-  padding: 20px 0 0;
+  border-top: 4px solid #fe9900;
+  padding: 30px 0 51px 110px;
+  background: url(assets/img/page/single/single_h3_bg.png) no-repeat 0 15px;
+  font-weight: bold;
+  font-size: 40px;
 }
 .l-contents .l-single h4 {
   padding: 30px;
@@ -333,10 +376,18 @@ img {
   padding: 0 0 26px;
 }
 .l-contents .l-archive h2 {
-  padding: 0 0 30px;
+  background: url("assets/img/page/single/single_h2_bg.png") no-repeat 0 0;
+  color: #fff;
+  font-size: 40px;
+  font-weight: bold;
+  margin: 0 0 35px;
+  padding: 30px 0 25px 30px;
 }
 .l-contents .l-archive h3 {
-  padding: 20px 0;
+  padding: 30px 0 40px 120px;
+  background: url(assets/img/page/archive/archive_h3_bg.png) no-repeat 36px 23px;
+  font-weight: bold;
+  font-size: 40px;
 }
 .l-contents .l-archive .archive-search {
   background: #f5f5f5 url(assets/img/top/search_bg.png) no-repeat;
@@ -383,6 +434,17 @@ img {
   font-size: 24px;
   padding: 0 30px 30px;
 }
+.l-contents .l-archive .search-archive p.headline {
+  font-weight: bold;
+  font-size: 40px;
+  height: 60px;
+  background: url(assets/img/page/archive/search_archive_bg.png) no-repeat 0 70px;
+}
+.l-contents .l-archive .search-archive p.headline span {
+  color: #fe9900;
+  font-size: 40px;
+  padding: 0 10px 0 0;
+}
 .l-contents .l-archive .search-archive p.result {
   padding: 30px;
 }
@@ -409,7 +471,7 @@ img {
   padding: 20px 30px 30px;
   font-size: 40px;
   font-weight: bold;
-  line-height: 67px;
+  line-height: 60px;
 }
 .l-contents .l-archive .l-archive-list .archive-single dd {
   padding: 32px 30px;
@@ -447,6 +509,32 @@ img {
 .l-contents .l-archive .archive-filter {
   background: #fff;
 }
+.l-contents .l-archive .archive-filter p {
+  font-size: 40px;
+  padding: 30px 30px 30px 130px;
+  font-weight: bold;
+}
+.l-contents .l-archive .archive-filter p.headline {
+  background: url(assets/img/page/archive/archive_filter_headline_bg.png) no-repeat 0 0;
+}
+.l-contents .l-archive .archive-filter li {
+  border-bottom: 3px solid #ccc;
+  padding: 33px 30px;
+  font-size: 35px;
+  font-weight: bold;
+  letter-spacing: -0.6px;
+  background: url(assets/img/top/top_search_by_bg.png) no-repeat 0 0;
+}
+.l-contents .l-archive .archive-filter li:first-child {
+  border-top: 3px solid #ccc;
+}
+.l-contents .l-archive .archive-filter li a {
+  color: #333;
+  text-decoration: none;
+}
+.l-contents .l-archive .archive-filter li span {
+  font-size: 25px;
+}
 .l-contents .l-archive .archive-filter .archive-filter-btn {
   text-align: center;
   background: #f5f5f5;
@@ -456,10 +544,30 @@ img {
 /*==============================
 フッター
 ==============================*/
+.l-footer {
+  background: #fff;
+}
+.l-footer li {
+  border-bottom: 3px solid #ccc;
+  background: #fff url(assets/img/top/top_search_area_li_bg.png) no-repeat 580px 40px;
+  padding: 30px;
+}
+.l-footer li:first-child {
+  border-top: 3px solid #ccc;
+}
+.l-footer li.toppage {
+  border-top: none;
+}
+.l-footer li a {
+  text-decoration: none;
+  color: #333;
+  font-size: 40px;
+  font-weight: bold;
+}
 .l-footer .l-copyright {
   background: #ff9900;
   height: 33px;
-  color: #ffffff;
+  color: #333333;
   font-size: 20px;
   text-align: center;
   padding: 17px 0 0 0;
