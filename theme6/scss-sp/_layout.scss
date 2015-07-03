@@ -94,6 +94,86 @@
             }
         }
     }
+/*勤務から探す*/
+    .search-by-area{
+        padding: 0 0 30px;
+        .headline{
+            padding: 30px 0 0;
+        }
+        .sub-area {
+            display: none;
+        }
+    }
+    ul{
+        li{
+            font-size: 40px;
+            font-weight: bold;
+            .area{
+                width: 580px;
+                height: 40px;
+                padding: 30px;
+                background: url(assets/img/top/top_search_area_bg_1.png) no-repeat 0 0;
+            }
+            .area-last{
+                width: 580px;
+                height: 46px;
+                padding: 30px;
+                background: url(assets/img/top/top_search_area_bg.png) no-repeat 0 0;
+            }
+            a{
+                color: #333;
+                text-decoration: none;
+            }
+            ul{
+                li{
+                    border-bottom: 3px solid #ccc;
+                    width: 610px;
+                    height: 40px;
+                    padding: 30px 0 30px 30px;
+                    background: #fff url(assets/img/top/top_search_area_li_bg.png) no-repeat 580px 40px;
+                    &:first-child{
+                        border-bottom: 3px solid #ccc;
+                        border-top: 3px solid #ccc;
+                        width: 610px;
+                        height: 40px;
+                        padding: 30px 0 30px 30px;
+                        background: #fff url(assets/img/top/top_search_area_li_bg.png) no-repeat 580px 40px;
+                    }
+                    &:last-child{
+                        border-bottom: none;
+                        border-top: none;
+                        width: 610px;
+                        height: 40px;
+                        padding: 30px 0 30px 30px;
+                        background: #fff url(assets/img/top/top_search_area_li_bg.png) no-repeat 580px 40px;
+                    }
+                    &.area07-top{
+                        border-top: none;
+                    }
+                    &.area07-foot{
+                        border-bottom: 3px solid #ccc;
+                    }
+                }
+            }
+        }
+    }
+    .search-by-job{
+        padding: 0 0 30px;
+        li{
+            border-bottom: 3px solid #ccc;
+            padding: 33px 30px;
+            font-size: 35px;
+            font-weight: bold;
+            letter-spacing: -0.6px;
+            background: url(assets/img/top/top_search_by_bg.png) no-repeat 0 0;
+            &:first-child{
+                border-top: 3px solid #ccc;
+            }
+            span{
+                font-size: 25px;
+            }
+        }
+    }
     .l-top-search{
         .search-head{
             background: url(assets/img/top/search_bg.png) no-repeat;
@@ -127,85 +207,6 @@
                     font-size: 0;
                     cursor: pointer;
                     background: url(assets/img/top/search_box_btn.png) no-repeat;
-                }
-            }
-        }
-        .search-by-area{
-            padding: 0 0 30px;
-            .headline{
-                padding: 30px 0 0;
-            }
-            .sub-area {
-                display: none;
-            }
-        }
-        ul{
-            li{
-                font-size: 40px;
-                font-weight: bold;
-                .area{
-                    width: 580px;
-                    height: 40px;
-                    padding: 30px;
-                    background: url(assets/img/top/top_search_area_bg_1.png) no-repeat 0 0;
-                }
-                .area-last{
-                    width: 580px;
-                    height: 46px;
-                    padding: 30px;
-                    background: url(assets/img/top/top_search_area_bg.png) no-repeat 0 0;
-                }
-                a{
-                    color: #333;
-                    text-decoration: none;
-                }
-                ul{
-                    li{
-                        border-bottom: 3px solid #ccc;
-                        width: 610px;
-                        height: 40px;
-                        padding: 30px 0 30px 30px;
-                        background: #fff url(assets/img/top/top_search_area_li_bg.png) no-repeat 580px 40px;
-                        &:first-child{
-                            border-bottom: 3px solid #ccc;
-                            border-top: 3px solid #ccc;
-                            width: 610px;
-                            height: 40px;
-                            padding: 30px 0 30px 30px;
-                            background: #fff url(assets/img/top/top_search_area_li_bg.png) no-repeat 580px 40px;
-                        }
-                        &:last-child{
-                            border-bottom: none;
-                            border-top: none;
-                            width: 610px;
-                            height: 40px;
-                            padding: 30px 0 30px 30px;
-                            background: #fff url(assets/img/top/top_search_area_li_bg.png) no-repeat 580px 40px;
-                        }
-                        &.area07-top{
-                            border-top: none;
-                        }
-                        &.area07-foot{
-                            border-bottom: 3px solid #ccc;
-                        }
-                    }
-                }
-            }
-        }
-        .search-by-job{
-            padding: 0 0 30px;
-            li{
-                border-bottom: 3px solid #ccc;
-                padding: 33px 30px;
-                font-size: 35px;
-                font-weight: bold;
-                letter-spacing: -0.6px;
-                background: url(assets/img/top/top_search_by_bg.png) no-repeat 0 0;
-                &:first-child{
-                    border-top: 3px solid #ccc;
-                }
-                span{
-                    font-size: 25px;
                 }
             }
         }
@@ -460,24 +461,6 @@
                 font-weight: bold;
                 &.headline{
                     background: url(assets/img/page/archive/archive_filter_headline_bg.png) no-repeat 0 0;
-                }
-            }
-            li{
-                border-bottom: 3px solid #ccc;
-                padding: 33px 30px;
-                font-size: 35px;
-                font-weight: bold;
-                letter-spacing: -0.6px;
-                background: url(assets/img/top/top_search_by_bg.png) no-repeat 0 0;
-                &:first-child{
-                    border-top: 3px solid #ccc;
-                }
-                a{
-                    color: #333;
-                    text-decoration: none;
-                }
-                span{
-                    font-size: 25px;
                 }
             }
             .archive-filter-btn{

@@ -127,6 +127,8 @@ img {
 コンテンツ
 ==============================*/
 .l-contents {
+  /*勤務から探す*/
+  /**********************/
   /*会社概要 (company.html)
   ///////////////////////////////*/
   /*個別記事 (single.html)
@@ -160,6 +162,81 @@ img {
 .l-contents .l-top-post-number .new-post a {
   color: #1d9af8;
   font-size: 40px;
+}
+.l-contents .search-by-area {
+  padding: 0 0 30px;
+}
+.l-contents .search-by-area .headline {
+  padding: 30px 0 0;
+}
+.l-contents .search-by-area .sub-area {
+  display: none;
+}
+.l-contents ul li {
+  font-size: 40px;
+  font-weight: bold;
+}
+.l-contents ul li .area {
+  width: 580px;
+  height: 40px;
+  padding: 30px;
+  background: url(assets/img/top/top_search_area_bg_1.png) no-repeat 0 0;
+}
+.l-contents ul li .area-last {
+  width: 580px;
+  height: 46px;
+  padding: 30px;
+  background: url(assets/img/top/top_search_area_bg.png) no-repeat 0 0;
+}
+.l-contents ul li a {
+  color: #333;
+  text-decoration: none;
+}
+.l-contents ul li ul li {
+  border-bottom: 3px solid #ccc;
+  width: 610px;
+  height: 40px;
+  padding: 30px 0 30px 30px;
+  background: #fff url(assets/img/top/top_search_area_li_bg.png) no-repeat 580px 40px;
+}
+.l-contents ul li ul li:first-child {
+  border-bottom: 3px solid #ccc;
+  border-top: 3px solid #ccc;
+  width: 610px;
+  height: 40px;
+  padding: 30px 0 30px 30px;
+  background: #fff url(assets/img/top/top_search_area_li_bg.png) no-repeat 580px 40px;
+}
+.l-contents ul li ul li:last-child {
+  border-bottom: none;
+  border-top: none;
+  width: 610px;
+  height: 40px;
+  padding: 30px 0 30px 30px;
+  background: #fff url(assets/img/top/top_search_area_li_bg.png) no-repeat 580px 40px;
+}
+.l-contents ul li ul li.area07-top {
+  border-top: none;
+}
+.l-contents ul li ul li.area07-foot {
+  border-bottom: 3px solid #ccc;
+}
+.l-contents .search-by-job {
+  padding: 0 0 30px;
+}
+.l-contents .search-by-job li {
+  border-bottom: 3px solid #ccc;
+  padding: 33px 30px;
+  font-size: 35px;
+  font-weight: bold;
+  letter-spacing: -0.6px;
+  background: url(assets/img/top/top_search_by_bg.png) no-repeat 0 0;
+}
+.l-contents .search-by-job li:first-child {
+  border-top: 3px solid #ccc;
+}
+.l-contents .search-by-job li span {
+  font-size: 25px;
 }
 .l-contents .l-top-search .search-head {
   background: url(assets/img/top/search_bg.png) no-repeat;
@@ -195,81 +272,6 @@ img {
   font-size: 0;
   cursor: pointer;
   background: url(assets/img/top/search_box_btn.png) no-repeat;
-}
-.l-contents .l-top-search .search-by-area {
-  padding: 0 0 30px;
-}
-.l-contents .l-top-search .search-by-area .headline {
-  padding: 30px 0 0;
-}
-.l-contents .l-top-search .search-by-area .sub-area {
-  display: none;
-}
-.l-contents .l-top-search ul li {
-  font-size: 40px;
-  font-weight: bold;
-}
-.l-contents .l-top-search ul li .area {
-  width: 580px;
-  height: 40px;
-  padding: 30px;
-  background: url(assets/img/top/top_search_area_bg_1.png) no-repeat 0 0;
-}
-.l-contents .l-top-search ul li .area-last {
-  width: 580px;
-  height: 46px;
-  padding: 30px;
-  background: url(assets/img/top/top_search_area_bg.png) no-repeat 0 0;
-}
-.l-contents .l-top-search ul li a {
-  color: #333;
-  text-decoration: none;
-}
-.l-contents .l-top-search ul li ul li {
-  border-bottom: 3px solid #ccc;
-  width: 610px;
-  height: 40px;
-  padding: 30px 0 30px 30px;
-  background: #fff url(assets/img/top/top_search_area_li_bg.png) no-repeat 580px 40px;
-}
-.l-contents .l-top-search ul li ul li:first-child {
-  border-bottom: 3px solid #ccc;
-  border-top: 3px solid #ccc;
-  width: 610px;
-  height: 40px;
-  padding: 30px 0 30px 30px;
-  background: #fff url(assets/img/top/top_search_area_li_bg.png) no-repeat 580px 40px;
-}
-.l-contents .l-top-search ul li ul li:last-child {
-  border-bottom: none;
-  border-top: none;
-  width: 610px;
-  height: 40px;
-  padding: 30px 0 30px 30px;
-  background: #fff url(assets/img/top/top_search_area_li_bg.png) no-repeat 580px 40px;
-}
-.l-contents .l-top-search ul li ul li.area07-top {
-  border-top: none;
-}
-.l-contents .l-top-search ul li ul li.area07-foot {
-  border-bottom: 3px solid #ccc;
-}
-.l-contents .l-top-search .search-by-job {
-  padding: 0 0 30px;
-}
-.l-contents .l-top-search .search-by-job li {
-  border-bottom: 3px solid #ccc;
-  padding: 33px 30px;
-  font-size: 35px;
-  font-weight: bold;
-  letter-spacing: -0.6px;
-  background: url(assets/img/top/top_search_by_bg.png) no-repeat 0 0;
-}
-.l-contents .l-top-search .search-by-job li:first-child {
-  border-top: 3px solid #ccc;
-}
-.l-contents .l-top-search .search-by-job li span {
-  font-size: 25px;
 }
 .l-contents .l-top-ranking {
   padding: 0 0 5px;

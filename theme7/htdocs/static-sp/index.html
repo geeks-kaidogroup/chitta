@@ -50,6 +50,7 @@
                     <ul>
                         <li rel="list01"><div class="area">関東</div>
                             <ul class="sub-area" id="list01">
+                                <li><a href="#">関東</a></li>
                                 <li><a href="#">東京都</a></li>
                                 <li><a href="#">神奈川県</a></li>
                                 <li><a href="#">千葉県</a></li>
@@ -61,6 +62,7 @@
                         </li>
                         <li rel="list02"><div class="area">東海</div>
                             <ul class="sub-area" id="list02">
+                                <li><a href="#">東海</a></li>
                                 <li><a href="#">愛知</a></li>
                                 <li><a href="#">岐阜</a></li>
                                 <li><a href="#">静岡</a></li>
@@ -69,6 +71,7 @@
                         </li>
                         <li rel="list03"><div class="area">関西</div>
                             <ul class="sub-area" id="list03">
+                                <li><a href="#">関西</a></li>
                                 <li><a href="#">大阪</a></li>
                                 <li><a href="#">兵庫</a></li>
                                 <li><a href="#">京都</a></li>
@@ -79,6 +82,7 @@
                         </li>
                         <li rel="list04"><div class="area">北海道・東北</div>
                             <ul class="sub-area" id="list04">
+                                <li><a href="#">北海道・東北</a></li>
                                 <li><a href="#">北海道</a></li>
                                 <li><a href="#">青森</a></li>
                                 <li><a href="#">岩手</a></li>
@@ -90,6 +94,7 @@
                         </li>
                         <li rel="list05"><div class="area">甲信越・北陸</div>
                             <ul class="sub-area" id="list05">
+                                <li><a href="#">甲信越・北陸</a></li>
                                 <li><a href="#">山梨</a></li>
                                 <li><a href="#">新潟</a></li>
                                 <li><a href="#">長野</a></li>
@@ -100,6 +105,7 @@
                         </li>
                         <li rel="list06"><div class="area">中国・四国</div>
                             <ul class="sub-area" id="list06">
+                                <li><a href="#">中国・四国</a></li>
                                 <li><a href="#">鳥取</a></li>
                                 <li><a href="#">島根</a></li>
                                 <li><a href="#">岡山</a></li>
@@ -113,7 +119,8 @@
                         </li>
                         <li rel="list07"><div class="area-last">九州・沖縄</div>
                             <ul class="sub-area" id="list07">
-                                <li class="area07-top"><a href="#">福岡</a></li>
+                                <li class="area07-top"><a href="#">九州・沖縄</a></li>
+                                <li><a href="#">福岡</a></li>
                                 <li><a href="#">佐賀</a></li>
                                 <li><a href="#">長崎</a></li>
                                 <li><a href="#">熊本</a></li>
@@ -211,7 +218,6 @@
         </footer> <!--/.l-footer-->
     </div> <!--/.wrap-->
     <script type="text/javascript">
-        $('#list01').show();
         $('li').click(function(){
            var target = $(this).attr('rel');
            $("#"+target).toggle();

@@ -93,42 +93,7 @@
             }
         }
     }
-    .l-top-search{
-        .search-head{
-            background: url(assets/img/top/search_bg.png) no-repeat;
-            height: 214px;
-            .search-title{
-                text-align: center;
-                padding: 19px 0 30px;
-            }
-            .search-box{
-                position: relative;
-                height: 80px;
-                width: 580px;
-                margin: 0 auto;
-                input[type=text]{
-                    background: url(assets/img/top/search_box_bg.png) no-repeat;
-                    border: none;
-                    outline: none;
-                    width: 380px;
-                    height: 80px;
-                    padding: 0 170px 0 30px;
-                    font-size: 20px;
-                }
-                button[type=search]{
-                    position: absolute;
-                    height: 60px;
-                    width: 150px;
-                    right: 10px;
-                    top: 10px;
-                    border: none;
-                    outline: none;
-                    font-size: 0;
-                    cursor: pointer;
-                    background: url(assets/img/top/search_box_btn.png) no-repeat;
-                }
-            }
-        }
+/*勤務から探す*/
         .search-by-area{
             padding: 0 0 30px;
             .headline{
@@ -164,14 +129,14 @@
                         width: 610px;
                         height: 40px;
                         padding: 30px 0 30px 30px;
-                        background: #fff url(assets/img/top/top_search_area_li_bg.png) no-repeat 0 0;
+                        background: #fff url(assets/img/top/top_search_area_li_bg.png) no-repeat 580px 40px;
                         &:first-child{
                             border-bottom: 3px solid #ccc;
                             border-top: 3px solid #ccc;
                             width: 610px;
                             height: 40px;
                             padding: 30px 0 30px 30px;
-                            background: #fff url(assets/img/top/top_search_area_li_bg.png) no-repeat 0 0;
+                            background: #fff url(assets/img/top/top_search_area_li_bg.png) no-repeat 580px 40px;
                         }
                         &:last-child{
                             border-bottom: none;
@@ -179,7 +144,7 @@
                             width: 610px;
                             height: 40px;
                             padding: 30px 0 30px 30px;
-                            background: #fff url(assets/img/top/top_search_area_li_bg.png) no-repeat 0 0;
+                            background: #fff url(assets/img/top/top_search_area_li_bg.png) no-repeat 580px 40px;
                         }
                         &.area07-top{
                             border-top: none;
@@ -213,6 +178,42 @@
                 border-bottom: 3px solid #ccc;
                 padding: 30px;
                 background: url(assets/img/top/top_search_by_bg.png) no-repeat 0 0;
+            }
+        }
+    .l-top-search{
+        .search-head{
+            background: url(assets/img/top/search_bg.png) no-repeat;
+            height: 214px;
+            .search-title{
+                text-align: center;
+                padding: 19px 0 30px;
+            }
+            .search-box{
+                position: relative;
+                height: 80px;
+                width: 580px;
+                margin: 0 auto;
+                input[type=text]{
+                    background: url(assets/img/top/search_box_bg.png) no-repeat;
+                    border: none;
+                    outline: none;
+                    width: 380px;
+                    height: 80px;
+                    padding: 0 170px 0 30px;
+                    font-size: 20px;
+                }
+                button[type=search]{
+                    position: absolute;
+                    height: 60px;
+                    width: 150px;
+                    right: 10px;
+                    top: 10px;
+                    border: none;
+                    outline: none;
+                    font-size: 0;
+                    cursor: pointer;
+                    background: url(assets/img/top/search_box_btn.png) no-repeat;
+                }
             }
         }
     }

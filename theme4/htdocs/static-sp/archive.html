@@ -136,7 +136,101 @@
                     <div class="archive-filter-btn">
                         <a href="#"><img src="assets/img/page/archive/archive_filter_btn.png" width="580" height="90" alt="絞り込む"></a>
                     </div>
-                </div>
+                </div><!--/.archive-filter-->
+
+                <div class="l-pagetop">
+                    <a href="#"><img src="assets/img/top/top_pagetop.png" width="400" height="90" alt="ページトップへ"></a>
+                </div><!--/.l-pagetop-->
+
+                <div class="search-by-area">
+                    <div class="headline">
+                        <img src="assets/img/page/archive/search_area_headline.png" width="640" height="100" alt="勤務地を限定する">
+                    </div>
+                    <ul>
+                        <li rel="list01"><div class="area">関東</div>
+                            <ul class="sub-area" id="list01">
+                                <li><a href="#">関東</a></li>
+                                <li><a href="#">東京都</a></li>
+                                <li><a href="#">神奈川県</a></li>
+                                <li><a href="#">千葉県</a></li>
+                                <li><a href="#">埼玉県</a></li>
+                                <li><a href="#">茨城県</a></li>
+                                <li><a href="#">栃木</a></li>
+                                <li><a href="#">群馬</a></li>
+                            </ul>
+                        </li>
+                        <li rel="list02"><div class="area">東海</div>
+                            <ul class="sub-area" id="list02">
+                                <li><a href="#">東海</a></li>
+                                <li><a href="#">愛知</a></li>
+                                <li><a href="#">岐阜</a></li>
+                                <li><a href="#">静岡</a></li>
+                                <li><a href="#">三重</a></li>
+                            </ul>
+                        </li>
+                        <li rel="list03"><div class="area">関西</div>
+                            <ul class="sub-area" id="list03">
+                                <li><a href="#">関西</a></li>
+                                <li><a href="#">大阪</a></li>
+                                <li><a href="#">兵庫</a></li>
+                                <li><a href="#">京都</a></li>
+                                <li><a href="#">滋賀</a></li>
+                                <li><a href="#">奈良</a></li>
+                                <li><a href="#">和歌山</a></li>
+                            </ul>
+                        </li>
+                        <li rel="list04"><div class="area">北海道・東北</div>
+                            <ul class="sub-area" id="list04">
+                                <li><a href="#">北海道・東北</a></li>
+                                <li><a href="#">北海道</a></li>
+                                <li><a href="#">青森</a></li>
+                                <li><a href="#">岩手</a></li>
+                                <li><a href="#">宮城</a></li>
+                                <li><a href="#">秋田</a></li>
+                                <li><a href="#">山形</a></li>
+                                <li><a href="#">福島</a></li>
+                            </ul>
+                        </li>
+                        <li rel="list05"><div class="area">甲信越・北陸</div>
+                            <ul class="sub-area" id="list05">
+                                <li><a href="#">甲信越・北陸</a></li>
+                                <li><a href="#">山梨</a></li>
+                                <li><a href="#">新潟</a></li>
+                                <li><a href="#">長野</a></li>
+                                <li><a href="#">富山</a></li>
+                                <li><a href="#">石川</a></li>
+                                <li><a href="#">福井</a></li>
+                            </ul>
+                        </li>
+                        <li rel="list06"><div class="area">中国・四国</div>
+                            <ul class="sub-area" id="list06">
+                                <li><a href="#">中国・四国</a></li>
+                                <li><a href="#">鳥取</a></li>
+                                <li><a href="#">島根</a></li>
+                                <li><a href="#">岡山</a></li>
+                                <li><a href="#">広島</a></li>
+                                <li><a href="#">山口</a></li>
+                                <li><a href="#">徳島</a></li>
+                                <li><a href="#">香川</a></li>
+                                <li><a href="#">愛媛</a></li>
+                                <li><a href="#">高知</a></li>
+                            </ul>
+                        </li>
+                        <li rel="list07"><div class="area-last">九州・沖縄</div>
+                            <ul class="sub-area" id="list07">
+                                <li class="area07-top"><a href="#">九州・沖縄</a></li>
+                                <li><a href="#">福岡</a></li>
+                                <li><a href="#">佐賀</a></li>
+                                <li><a href="#">長崎</a></li>
+                                <li><a href="#">熊本</a></li>
+                                <li><a href="#">大分</a></li>
+                                <li><a href="#">宮崎</a></li>
+                                <li><a href="#">鹿児島</a></li>
+                                <li class="area07-foot"><a href="#">沖縄</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div> <!--/.search-by-area-->
             </section> <!--/.l-company-->
             <div class="l-pagetop-archive">
                 <a href="#"><img src="assets/img/top/top_pagetop.png" width="400" height="90" alt="ページトップへ"></a>
@@ -156,5 +250,18 @@
             </div>
         </footer> <!--/.l-footer-->
     </div> <!--/.wrap-->
+    <script type="text/javascript">
+        $('li').click(function(){
+           var target = $(this).attr('rel');
+           $("#"+target).toggle();
+              if(target!='list01'){$('#list01').hide();}
+              if(target!='list02'){$('#list02').hide();}
+              if(target!='list03'){$('#list03').hide();}
+              if(target!='list04'){$('#list04').hide();}
+              if(target!='list05'){$('#list05').hide();}
+              if(target!='list06'){$('#list06').hide();}
+              if(target!='list07'){$('#list07').hide();}
+        });
+    </script>
 </body>
 </html>

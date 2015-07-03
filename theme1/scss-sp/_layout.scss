@@ -94,51 +94,17 @@
             }
         }
     }
-    .l-top-search{
-        .search-head{
-            background: url(assets/img/top/search_bg.png) no-repeat;
-            height: 214px;
-            .search-title{
-                text-align: center;
-                padding: 19px 0 30px;
-            }
-            .search-box{
-                position: relative;
-                height: 80px;
-                width: 580px;
-                margin: 0 auto;
-                input[type=text]{
-                    background: url(assets/img/top/search_box_bg.png) no-repeat;
-                    border: none;
-                    outline: none;
-                    width: 380px;
-                    height: 80px;
-                    padding: 0 170px 0 30px;
-                    font-size: 20px;
-                }
-                button[type=search]{
-                    position: absolute;
-                    height: 60px;
-                    width: 150px;
-                    right: 10px;
-                    top: 10px;
-                    border: none;
-                    outline: none;
-                    font-size: 0;
-                    cursor: pointer;
-                    background: url(assets/img/top/search_box_btn.png) no-repeat;
-                }
-            }
+
+/* 勤務から探すの指定クラス*/
+    .search-by-area{
+        padding: 0 0 30px;
+        .headline{
+            padding: 30px 0 0;
         }
-        .search-by-area{
-            padding: 0 0 30px;
-            .headline{
-            	padding: 30px 0 0;
-            }
-            .sub-area {
-                display: none;
-            }
+        .sub-area {
+            display: none;
         }
+
         ul{
             li{
                 font-size: 40px;
@@ -192,12 +158,55 @@
                 }
             }
         }
+    }
+    .l-top-search{
+        .search-head{
+            background: url(assets/img/top/search_bg.png) no-repeat;
+            height: 214px;
+            .search-title{
+                text-align: center;
+                padding: 19px 0 30px;
+            }
+            .search-box{
+                position: relative;
+                height: 80px;
+                width: 580px;
+                margin: 0 auto;
+                input[type=text]{
+                    background: url(assets/img/top/search_box_bg.png) no-repeat;
+                    border: none;
+                    outline: none;
+                    width: 380px;
+                    height: 80px;
+                    padding: 0 170px 0 30px;
+                    font-size: 20px;
+                }
+                button[type=search]{
+                    position: absolute;
+                    height: 60px;
+                    width: 150px;
+                    right: 10px;
+                    top: 10px;
+                    border: none;
+                    outline: none;
+                    font-size: 0;
+                    cursor: pointer;
+                    background: url(assets/img/top/search_box_btn.png) no-repeat;
+                }
+            }
+        }
         .search-by-employment{
             padding: 0 0 30px;
             li{
                 border-bottom: 3px solid #ccc;
                 padding: 30px;
+                font-size: 40px;
+                font-weight: bold;
                 background: url(assets/img/top/top_search_by_bg.png) no-repeat 0 0;
+                a{
+                    text-decoration: none;
+                    color: #333;
+                }
             }
         }
         .search-by-qualification{
@@ -205,7 +214,13 @@
             li{
                 border-bottom: 3px solid #ccc;
                 padding: 30px;
+                font-size: 40px;
+                font-weight: bold;
                 background: url(assets/img/top/top_search_by_bg.png) no-repeat 0 0;
+                a{
+                    text-decoration: none;
+                    color: #333;
+                }
             }
         }
         .search-by-holiday{
@@ -213,7 +228,13 @@
             li{
                 border-bottom: 3px solid #ccc;
                 padding: 30px;
+                font-size: 40px;
+                font-weight: bold;
                 background: url(assets/img/top/top_search_by_bg.png) no-repeat 0 0;
+                a{
+                    text-decoration: none;
+                    color: #333;
+                }
             }
         }
     }
